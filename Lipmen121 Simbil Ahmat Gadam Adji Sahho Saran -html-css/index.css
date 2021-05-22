@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: montserrat;
+    overflow-x: hidden;
+}
+
+/**
+DEBUT
+HEADER
+**/
+nav{
+    background-color: palevioletred;
+    height: 90px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fdf1f3;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+a.active,a:hover{
+    font-size: 25px;
+}
+/**
+FIN
+HEADER
+**/
+
+
+
+/**
+DEBUT 
+CONTENUE
+**/
+.debut{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(Images/a6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 5s infinite;
+}
+
+.uno{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.toto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 12em;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 2s;
+}
+
+.toto:hover{
+    letter-spacing: 20px;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url(Images/a5.jpg);
+    }
+    33%{
+        background-image: url(Images/a1.jpg);
+    }
+    67%{
+        background-image: url(Images/b1.jpg);
+    }
+    100%{
+        background-image: url(Images/a3.jpg);
+    }
+}
+/**
+FIN
+CONTENUE
+**/
+
+
+/**
+DEBUT 
+FOOTER
+**/
+.bonjour{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.bonjour a{
+    text-decoration: none;
+}
+.bonjour i{
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color: palevioletred;
+    border-radius: 50%;
+    border: 3px solid grey;
+    transition: 0.3s;
+}
+
+.bonjour i:hover{
+    background: white;
+}
+
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #fdf1f3;
+    padding: 10px 0;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.125em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: palevioletred;
+    padding: 10px 0;
+}
+
+.footer-bottom {
+    padding: 10px;
+    background-color: #3d545f;
+    color: #fff;
+    font-size: 12px;
+}
+
+.content a{
+    color: black;
+
+}
+.content a:hover{
+    color: palevioletred;
+}
+/**
+FIN
+HEADER
+**/
+
